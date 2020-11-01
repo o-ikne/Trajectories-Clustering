@@ -53,7 +53,7 @@ def check(trajectory:Trajectory):
 
 ## Example
 ### file path
-file_path = '/home/iken/Documents/M1/Python refresher/clustering Trajectories/cabspottingdata/new_uvreoipy.txt'
+file_path = 'cabspottingdata/new_uvreoipy.txt'
 
 
 ### The input Trajectories
