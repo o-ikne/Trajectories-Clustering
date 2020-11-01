@@ -13,7 +13,6 @@ def check(trajectory:Trajectory):
     
     ## cheking if the file path exists
     if trajectory.test == 0:
-        print(trajectory.file_path)
         if path.exists(trajectory.file_path):
             return 'file path exists'
      
