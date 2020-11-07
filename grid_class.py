@@ -31,7 +31,7 @@ class Grid(object):
         self.get_input_trajectories_cells()
         
         
-    def initiate_grid(self):    
+    def initiate_grid(self):
         
         """return a zero numpy array with the shape (n_rect x n_rects)"""
         
@@ -83,7 +83,7 @@ class Grid(object):
         x, y = self.cell_width * i, self.cell_height * j
         x = self.x0 + self.cell_width  * (x // self.cell_width)
         y = self.y0 + self.cell_height * (y // self.cell_height)
-        return x, y         
+        return x, y
         
         
     def get_cell_center(self, i:int, j:int) -> tuple: 
