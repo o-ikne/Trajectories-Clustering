@@ -20,6 +20,7 @@ def check(trajectory:Trajectory):
     if trajectory.test == 1:
         if trajectory.file_path.endswith('.csv'):
             trajectory.df = pd.read_csv(trajectory.file_path)
+            trajectory.df = trajectory.df.dropna(axis=0, how="any")
             return 'file format is correct'
             
         if trajectory.file_path.endswith('.txt'):
