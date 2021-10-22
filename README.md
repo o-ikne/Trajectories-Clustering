@@ -20,7 +20,7 @@ This repository contains :
 
 ### __Data__
 
-For the txt files used in this project, they are located in the folder `cabspottingdata` (1 file = 1 trajectory) which is available in this link: [link](https://drive.google.com/file/d/1VI9b0sF4Br3alozUtSsEP8tnboID0Xqc/view?usp=sharing)
+For the txt files used in this project, they are located in the folder `cabspottingdata` (1 file = 1 trajectory) which is available in this [link](https://drive.google.com/file/d/1VI9b0sF4Br3alozUtSsEP8tnboID0Xqc/view?usp=sharing).
 
 ### __Test-Driven Development (TDD) steps__
 
@@ -34,7 +34,7 @@ For the txt files used in this project, they are located in the folder `cabspott
 
 - 5. Commit (& push)
 
-- 6. Go to 1.
+- 6. Go to (i).
 
 ### __TDD on Project__
 
