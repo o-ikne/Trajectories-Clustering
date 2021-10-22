@@ -21,26 +21,41 @@ This repository contains :
 For the txt files used in this project they are in the "cabspottingdata" folder that is available in this link: https://drive.google.com/file/d/1VI9b0sF4Br3alozUtSsEP8tnboID0Xqc/view?usp=sharing
 
 ### __Test-Driven Development (TDD) steps__
--1. Add a new unit test
--2. Check it fails
--3. Make it pass (with the others)
--4. Refactor (if needed)
--5. Commit (& push)
--6. Go to 1.
+
+- 1. Add a new unit test
+- 
+- 2. Check it fails
+- 
+- 3. Make it pass (with the others)
+- 
+- 4. Refactor (if needed)
+- 
+- 5. Commit (& push)
+- 
+- 6. Go to 1.
 
 ### __TDD on Project__
 
 Identify input/output structures
+
 - Input: Set of trajectories
+
   - Classes: Trajectory, Point
+
 - Output: Graph of paths
+  
   - Classes: Graph, Node, Edge
-Apply TDD to develop your clustering algorithm
+  
+Apply TDD to develop clustering algorithm
 
 ### __Importing & plotting data__
 
 - Download the mobility dataset from here (SF cabs)
+
 - Use the CSV python parser to load each filcabspottingdata.tar.gze in the directory (1 file = 1 trajectory) as an input trajectory for your algorithm
+
 - Run clustering algorithm on the loaded dataset by creating a new Application class that combines the parser with the clustering algorithm
+
 - Plot the resulting graph using matplotlib for basic rendering of the resulting graph, or:
+
 - Explore the effects of changing the clustering “depths” on the resulting graph
