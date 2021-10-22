@@ -18,20 +18,22 @@ This repository contains :
 
 - `clustering trajectories.ipynb` : A jupyter notebook version of the 3 sripts above that contains all the classes (Trajectory, Grid, Test)
 
-For the txt files used in this project they are in the "cabspottingdata" folder that is available in this link: https://drive.google.com/file/d/1VI9b0sF4Br3alozUtSsEP8tnboID0Xqc/view?usp=sharing
+### __Data__
+
+For the txt files used in this project, they are located in the folder "cabspottingdata" which is available in this link: https://drive.google.com/file/d/1VI9b0sF4Br3alozUtSsEP8tnboID0Xqc/view?usp=sharing
 
 ### __Test-Driven Development (TDD) steps__
 
 - 1. Add a new unit test
-- 
+
 - 2. Check it fails
-- 
+
 - 3. Make it pass (with the others)
-- 
+
 - 4. Refactor (if needed)
-- 
+
 - 5. Commit (& push)
-- 
+
 - 6. Go to 1.
 
 ### __TDD on Project__
