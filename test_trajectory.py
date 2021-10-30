@@ -1,11 +1,11 @@
-## Liberaires
+## Libraries
 import pytest
 from trajectory_class import Trajectory
 import pandas as pd
 from os import path
 
 
-## Ckeking method
+## Checking method
 
 def check(trajectory:Trajectory):
     
