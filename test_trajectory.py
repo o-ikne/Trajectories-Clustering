@@ -11,7 +11,7 @@ def check(trajectory:Trajectory):
     
     """applying the TDD method to the Trajectory class"""
     
-    ## cheking if the file path exists
+    ## checking if the file path exists
     if trajectory.test == 0:
         if path.exists(trajectory.file_path):
             return 'file path exists'
@@ -28,24 +28,24 @@ def check(trajectory:Trajectory):
             trajectory.df = trajectory.df.dropna(axis=0, how="any")
             return 'file format is correct'
         
-    ## cheking if the file is not empty        
+    ## checking if the file is not empty        
     if trajectory.test == 2:
         if trajectory.df.shape[0] >= 3 and trajectory.df.shape[1] >= 2:
             return 'file is not empty'
         
-    ## cheking if the data shape is correct    
+    ## checking if the data shape is correct    
     if trajectory.test == 3:
         if trajectory.df.shape[1] == 4:
             trajectory.df.columns = ['x', 'y', 'nx', 'ny']
             return 'all data is there'
 
-    ## cheking the format of the data
+    ## checking the format of the data
     if trajectory.test == 4:
         if (trajectory.df[['x', 'y']].dtypes == 'float64').all() or (trajectory.df[['x', 'y']].dtypes == 'int64').all():
             trajectory.df = trajectory.df.select_dtypes(include=['float64'])
             return 'data format is correct'
     
-    ## cheking if coordinates are uploaded succesfuly
+    ## checking if coordinates are uploaded succesfuly
     if trajectory.test == 5:
         trajectory.get_coord()
         print(f"Trajectory '{trajectory}' is uploaded succesfuly")
@@ -66,14 +66,14 @@ file_path = 'cabspottingdata/new_uvreoipy.txt'
 ## test 0
 def test_file_existence():
     
-    """cheking the existence of the file path"""
+    """checking the existence of the file path"""
     trajectory = Trajectory(file_path)
     assert check(trajectory) == 'file path exists'    
 
 ## test 1
 def test_file_format():
     
-    """cheking the file format"""
+    """checking the file format"""
     trajectory = Trajectory(file_path)
     check(trajectory)
     trajectory.next_test()
@@ -82,7 +82,7 @@ def test_file_format():
 ## test 2
 def test_empty_file():
     
-    """cheking that the file is not empty"""
+    """checking that the file is not empty"""
     
     trajectory = Trajectory(file_path)
     check(trajectory)
@@ -94,7 +94,7 @@ def test_empty_file():
 ## test 3
 def test_all_data_there():
     
-    """cheking that all data is there"""
+    """checking that all data is there"""
 
     trajectory = Trajectory(file_path)
     check(trajectory)
@@ -108,7 +108,7 @@ def test_all_data_there():
 ## test 4
 def test_data_format():
     
-    """cheking the data format is correct"""
+    """checking the data format is correct"""
     
     trajectory = Trajectory(file_path)
     check(trajectory)
@@ -124,7 +124,7 @@ def test_data_format():
 ## test 5
 def test_upload_coordinates():
     
-    """cheking the coordinates upload"""
+    """checking the coordinates upload"""
     
     trajectory = Trajectory(file_path)
     check(trajectory)
